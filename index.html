@@ -295,7 +295,7 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
 </header>
 
 <main>
-<section class="hero" aria-labelledby="h1" style="padding:0">
+<section class="hero" id="start" aria-labelledby="h1" style="padding:0">
   <picture>
     <source media="(max-width:760px)" srcset="img/hero-tel.webp">
     <img src="img/hero.webp" alt="Żółte znaki ostrzegawcze ustawione na posadzce" width="1728" height="1080" fetchpriority="high">
@@ -488,7 +488,7 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
   var linki=[].slice.call(nav.querySelectorAll('a[href^="#"]'));
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(w){w.forEach(function(e){if(e.isIntersecting){linki.forEach(function(l){l.toggleAttribute('aria-current',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
-    linki.forEach(function(l){var s=document.querySelector(l.getAttribute('href'));if(s)io.observe(s)});
+    linki.forEach(function(l){var s=document.querySelector(l.getAttribute('href'));if(s)io.observe(s)});io.observe(document.getElementById('start'));
   }
   // galeria: przeciąganie myszą + strzałki
   var g=document.getElementById('galeria-pas'),start=0,sl=0,ciag=false;
