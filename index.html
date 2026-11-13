@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>Szkolenia i usługi BHP Miłoszyce, Jelcz-Laskowice | Safety Solutions Karolina Adamowicz</title>
-<meta name="description" content="Szkolenia BHP, ocena ryzyka zawodowego, audyty i dokumentacja BHP dla firm. Safety Solutions Karolina Adamowicz, Miłoszyce (gm. Jelcz-Laskowice). Tel. 790 499 686.">
+<title>Szkolenia BHP Wrocław, Oława, Jelcz-Laskowice | Safety Solutions Karolina Adamowicz</title>
+<meta name="description" content="Szkolenia wstępne i okresowe BHP dla wszystkich grup stanowiskowych, ocena ryzyka, audyty i dokumentacja BHP. Wrocław, Oława, Jelcz-Laskowice, Świdnica, Żarów i cały Dolny Śląsk. Tel. 790 499 686.">
 <meta name="theme-color" content="#0B1660">
 <link rel="icon" href="img/znak.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 <link rel="preload" as="image" href="img/hero-tel.webp" media="(max-width:760px)">
 <link rel="preload" as="image" href="img/hero.webp" media="(min-width:761px)">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Safety Solutions Karolina Adamowicz","description":"Szkolenia BHP, audyty BHP, ocena ryzyka zawodowego i dokumentacja BHP dla firm.","telephone":"+48790499686","email":"karolina.adamowicz@bhp-gocha.com.pl","url":"https://bhp-gocha.com.pl/","address":{"@type":"PostalAddress","streetAddress":"ul. Stanisława Wyspiańskiego 1","postalCode":"55-220","addressLocality":"Miłoszyce","addressRegion":"dolnośląskie","addressCountry":"PL"},"sameAs":["https://www.facebook.com/SafetySolutionsAdamowicz","https://www.instagram.com/safety_solutionss/"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Safety Solutions Karolina Adamowicz","description":"Szkolenia wstępne i okresowe BHP dla wszystkich grup stanowiskowych, audyty BHP, ocena ryzyka zawodowego i dokumentacja BHP dla firm.","areaServed":[{"@type":"City","name":"Wrocław"},{"@type":"AdministrativeArea","name":"Gmina Jelcz-Laskowice"},{"@type":"City","name":"Oława"},{"@type":"Place","name":"Godzikowice"},{"@type":"City","name":"Żarów"},{"@type":"City","name":"Świdnica"},{"@type":"AdministrativeArea","name":"województwo dolnośląskie"},{"@type":"AdministrativeArea","name":"województwo lubuskie"},{"@type":"AdministrativeArea","name":"województwo wielkopolskie"},{"@type":"AdministrativeArea","name":"województwo łódzkie"},{"@type":"AdministrativeArea","name":"województwo opolskie"},{"@type":"AdministrativeArea","name":"województwo śląskie"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Szkolenia BHP","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Szkolenie wstępne BHP"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Szkolenie okresowe BHP dla pracowników administracyjno-biurowych"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Szkolenie okresowe BHP dla pracowników na stanowiskach robotniczych"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Szkolenie okresowe BHP dla pracowników inżynieryjno-technicznych"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Szkolenie okresowe BHP dla pracodawców i osób kierujących pracownikami"}}]},"telephone":"+48790499686","email":"karolina.adamowicz@bhp-gocha.com.pl","url":"https://bhp-gocha.com.pl/","address":{"@type":"PostalAddress","streetAddress":"ul. Stanisława Wyspiańskiego 1","postalCode":"55-220","addressLocality":"Miłoszyce","addressRegion":"dolnośląskie","addressCountry":"PL"},"sameAs":["https://www.facebook.com/SafetySolutionsAdamowicz","https://www.instagram.com/safety_solutionss/"]}
 </script>
 <style>
 :root{
@@ -105,6 +105,33 @@ section{padding:clamp(72px,8vw,120px) 0}
 .karta li{padding-left:22px;position:relative}
 .karta li::before{content:"";position:absolute;left:0;top:.55em;width:11px;height:6px;border-radius:0 0 6px 6px;background:var(--blue)}
 .przesun-info{display:none}
+
+/* szkolenia */
+.szk-rodzaje{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.szk{background:#fff;border:1px solid var(--line);border-top:5px solid var(--navy);padding:clamp(24px,3vw,38px);display:flex;flex-direction:column;gap:12px}
+.szk.okres{border-top-color:var(--amber)}
+.szk .etyk{font:600 15px/1 var(--head);color:var(--blue);letter-spacing:.02em}
+.szk h3{font-size:clamp(24px,2.2vw,30px)}
+.szk p{color:var(--muted);font-size:17px}
+.grupy-tyt{font:600 20px/1.3 var(--head);color:var(--ink);margin:48px 0 18px}
+.grupy{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--navy)}
+.grupy li{padding:24px 24px 24px 0;display:flex;flex-direction:column;gap:12px;font:600 19px/1.3 var(--head);color:var(--ink)}
+.grupy li+li{padding-left:24px;border-left:1px solid var(--line)}
+.grupy svg{width:34px;height:34px;color:var(--blue)}
+.grupy small{display:block;font:400 16px/1.45 var(--body);color:var(--muted)}
+.szk-akcja{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.szk-akcja p{color:var(--muted);font-size:17px;max-width:620px}
+
+/* obszar działania */
+.obszar{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,5vw,80px);align-items:start}
+.obszar .wst{margin-top:18px;color:var(--muted);max-width:480px}
+.obszar h3{font-size:20px;margin-bottom:16px}
+.miasta{list-style:none;margin:0 0 36px;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.miasta li{background:var(--navy);color:#fff;font:600 17px/1 var(--head);padding:13px 18px;border-radius:3px;display:flex;align-items:center;gap:9px}
+.miasta li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--amber);flex:none}
+.woj{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px}
+.woj li{padding:14px 0;border-top:1px solid var(--line);font:500 18px/1.3 var(--head);color:var(--ink)}
+.obszar .uwaga{margin-top:22px;font-size:16px;color:var(--muted)}
 
 /* zakres - ciemna sekcja */
 .ciemna{background:var(--navy);color:#DCE2F3}
@@ -233,7 +260,10 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
   .menu-otwarte .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
   .menu-otwarte .burger span:nth-child(2){opacity:0}
   .menu-otwarte .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-  .zakres,.kontakt,.o-firmie{grid-template-columns:1fr}
+  .zakres,.kontakt,.o-firmie,.obszar{grid-template-columns:1fr}
+  .grupy{grid-template-columns:1fr 1fr}
+  .grupy li:nth-child(3){padding-left:0;border-left:0}
+  .grupy li:nth-child(n+3){border-top:1px solid var(--line)}
   .zakres .foto{max-width:520px}
   .zakres .foto img{aspect-ratio:4/3}
 }
@@ -260,6 +290,15 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
   .karta{flex:0 0 84%;scroll-snap-align:center}
   .przesun-info{display:block;font-size:15px;color:var(--muted);margin-top:10px}
   .lista{grid-template-columns:1fr}
+  .szk-rodzaje{grid-template-columns:1fr;gap:16px}
+  .grupy-tyt{margin-top:36px}
+  .grupy{grid-template-columns:1fr}
+  .grupy li,.grupy li+li,.grupy li:nth-child(3){flex-direction:row;align-items:flex-start;gap:16px;padding:18px 0;border-left:0}
+  .grupy li+li{border-top:1px solid var(--line)}
+  .grupy svg{width:30px;height:30px;flex:none}
+  .miasta li{font-size:16px;padding:11px 14px}
+  .woj{grid-template-columns:1fr}
+  .woj li{font-size:17px;padding:11px 0}
   .trzy{grid-template-columns:1fr}
   .trzy div,.trzy div+div{padding:24px 0;border-left:0}
   .trzy div+div{border-top:1px solid var(--line)}
@@ -283,9 +322,9 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
     </a>
     <nav class="nav" id="nav" aria-label="Menu główne">
       <a href="#oferta">Oferta</a>
-      <a href="#zakres">Zakres</a>
+      <a href="#szkolenia">Szkolenia</a>
       <a href="#o-firmie">O firmie</a>
-      <a href="#galeria">Galeria</a>
+      <a href="#obszar">Gdzie działam</a>
       <a href="#blog">Blog BHP</a>
       <a href="#kontakt">Kontakt</a>
       <a class="tel" href="tel:+48790499686">790 499 686</a>
@@ -307,7 +346,7 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
       <a class="btn btn-amber" href="#kontakt">Zapytaj o szkolenie lub audyt</a>
       <a class="tel-duzy" href="tel:+48790499686"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true"><path d="M5 3h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>790 499 686</a>
     </div>
-    <p class="miejsce">Safety Solutions Karolina Adamowicz, Miłoszyce (gmina Jelcz-Laskowice)</p>
+    <p class="miejsce">Safety Solutions Karolina Adamowicz, Miłoszyce (gmina Jelcz-Laskowice). Wrocław, Oława, Świdnica i cały Dolny Śląsk.</p>
   </div></div>
   <div class="zeby" aria-hidden="true"></div>
 </section>
@@ -323,7 +362,7 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
         <figure><img src="img/szkolenie.webp" alt="Szkolenie w sali konferencyjnej" width="450" height="300" loading="lazy"></figure>
         <div class="tresc">
           <h3>Szkolenia BHP</h3>
-          <p>Szkolenia dopasowane do tego, czym naprawdę zajmuje się Twoja firma, żeby pracownicy wiedzieli, jak pracować bezpiecznie na swoim stanowisku.</p>
+          <p>Szkolenia wstępne i okresowe BHP dla wszystkich grup stanowiskowych, dopasowane do tego, czym naprawdę zajmuje się Twoja firma.</p>
         </div>
       </article>
       <article class="karta">
@@ -345,6 +384,38 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
   </div>
 </section>
 
+<section class="szary" id="szkolenia">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Szkolenia BHP</h2>
+      <p>Szkolenia wstępne oraz okresowe BHP dla wszystkich grup stanowiskowych. Program dopasowany do stanowisk i zagrożeń w Twojej firmie.</p>
+    </div>
+    <div class="szk-rodzaje">
+      <article class="szk">
+        <span class="etyk">Dla nowych pracowników</span>
+        <h3>Szkolenie wstępne BHP</h3>
+        <p>Obowiązkowe przed dopuszczeniem do pracy. Pracownik poznaje zasady BHP obowiązujące w firmie i zagrożenia na swoim stanowisku.</p>
+      </article>
+      <article class="szk okres">
+        <span class="etyk">Dla zatrudnionych</span>
+        <h3>Szkolenie okresowe BHP</h3>
+        <p>Odświeżenie i uzupełnienie wiedzy z zakresu BHP, z uwzględnieniem zmian w przepisach i w warunkach pracy na danym stanowisku.</p>
+      </article>
+    </div>
+    <p class="grupy-tyt">Szkolenia okresowe dla wszystkich grup stanowiskowych</p>
+    <ul class="grupy">
+      <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="4" y="6" width="24" height="15" rx="1"/><path d="M11 27h10M16 21v6"/></svg><span>Administracyjno-biurowe<small>pracownicy biurowi i administracja</small></span></li>
+      <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 20a10 10 0 0 1 20 0z"/><path d="M4 20h24v3H4zM14 10V7h4v3"/></svg><span>Robotnicze<small>stanowiska produkcyjne, magazynowe i warsztatowe</small></span></li>
+      <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="16" cy="16" r="5"/><path d="M16 3v5M16 24v5M3 16h5M24 16h5M7 7l3.5 3.5M21.5 21.5 25 25M25 7l-3.5 3.5M10.5 21.5 7 25"/></svg><span>Inżynieryjno-techniczne<small>kadra inżynieryjna i techniczna</small></span></li>
+      <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="16" cy="10" r="5"/><path d="M6 28a10 10 0 0 1 20 0"/><path d="M16 17l-2 5 2 3 2-3z"/></svg><span>Pracodawcy i osoby kierujące pracownikami<small>właściciele, kierownicy, brygadziści</small></span></li>
+    </ul>
+    <div class="szk-akcja">
+      <p>Napisz, ilu pracowników i jakich stanowisk dotyczy szkolenie, a przygotuję propozycję terminu.</p>
+      <a class="btn btn-navy" href="#kontakt">Zapytaj o szkolenie</a>
+    </div>
+  </div>
+</section>
+
 <section class="ciemna" id="zakres">
   <div class="wrap zakres">
     <div class="foto"><img src="img/wysokosc.webp" alt="Pracownik w kasku i szelkach bezpieczeństwa na konstrukcji stalowej" width="450" height="675" loading="lazy"></div>
@@ -363,7 +434,7 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
   </div>
 </section>
 
-<section class="szary" id="o-firmie">
+<section id="o-firmie">
   <div class="wrap">
     <div class="glowa">
       <h2>Dlaczego Safety Solutions</h2>
@@ -380,6 +451,36 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
         <p>Firma działa od 2020 roku w Miłoszycach w gminie Jelcz-Laskowice. Zajmuje się bezpieczeństwem i higieną pracy w przedsiębiorstwach różnych branż: od szkoleń, przez audyty i ocenę ryzyka, po dokumentację i wdrażanie procedur.</p>
         <p>Cel jest prosty: bezpieczne i zdrowe warunki pracy, mniej ryzyka i spokój przy kontrolach.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="szary" id="obszar">
+  <div class="wrap obszar">
+    <div>
+      <h2>Gdzie działam</h2>
+      <p class="wst">Szkolenia i usługi BHP prowadzę na miejscu u klienta, głównie we Wrocławiu i okolicach Oławy oraz Jelcza-Laskowic. Obsługuję też firmy w sąsiednich województwach.</p>
+    </div>
+    <div>
+      <h3>Miasta i gminy</h3>
+      <ul class="miasta">
+        <li>Wrocław</li>
+        <li>Gmina Jelcz-Laskowice</li>
+        <li>Oława</li>
+        <li>Godzikowice</li>
+        <li>Żarów</li>
+        <li>Świdnica</li>
+      </ul>
+      <h3>Województwa</h3>
+      <ul class="woj">
+        <li>dolnośląskie</li>
+        <li>lubuskie</li>
+        <li>wielkopolskie</li>
+        <li>łódzkie</li>
+        <li>opolskie</li>
+        <li>śląskie</li>
+      </ul>
+      <p class="uwaga">Na Śląsku we współpracy z partnerską firmą z Katowic.</p>
     </div>
   </div>
 </section>
@@ -440,7 +541,7 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
       <label>Firma<input name="firma" autocomplete="organization"></label>
       <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
       <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
-      <label class="cala">Temat<select name="temat"><option>Szkolenie BHP</option><option>Audyt BHP / ocena ryzyka</option><option>Dokumentacja BHP</option><option>Stała obsługa BHP</option><option>Inne</option></select></label>
+      <label class="cala">Temat<select name="temat"><option>Szkolenie wstępne BHP</option><option>Szkolenie okresowe BHP</option><option>Audyt BHP / ocena ryzyka</option><option>Dokumentacja BHP</option><option>Stała obsługa BHP</option><option>Inne</option></select></label>
       <label class="cala">Wiadomość<textarea name="wiad" placeholder="Np. branża, liczba pracowników, termin szkolenia"></textarea></label>
       <label class="zgoda"><input type="checkbox" required><span>Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na zapytanie. Szczegóły w <a href="polityka.html">polityce prywatności</a>.</span></label>
       <button class="btn btn-navy" type="submit">Wyślij zapytanie</button>
@@ -459,9 +560,9 @@ footer .zeby{color:var(--amber);width:132px;margin-bottom:22px}
           <svg class="znak" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 46a32 32 0 0 1 64 0z" fill="#F9AA2A"/><rect x="38" y="13" width="5" height="20" rx="2.5" fill="#0B1660"/><rect x="57" y="13" width="5" height="20" rx="2.5" fill="#0B1660"/><path d="M8 52h17a25 25 0 0 0 25 25v17a42 42 0 0 1-42-42z" fill="#fff"/><path d="M92 52H75a25 25 0 0 1-25 25v17a42 42 0 0 0 42-42z" fill="#7FA8E8"/><path d="M4 52h10v8H4zM14 76l7-7 7 7-7 7zM45 90h5v9h-5z" fill="#fff"/><path d="M86 52h10v8H86zM72 76l7-7 7 7-7 7zM50 90h5v9h-5z" fill="#7FA8E8"/></svg>
           <span><b>Safety Solutions</b><small>BHP Karolina Adamowicz</small></span>
         </a>
-        <p>Szkolenia, audyty, ocena ryzyka i dokumentacja BHP dla firm.</p>
+        <p>Szkolenia, audyty, ocena ryzyka i dokumentacja BHP dla firm. Wrocław, Oława, Jelcz-Laskowice i cały Dolny Śląsk.</p>
       </div>
-      <div><h4>Strona</h4><ul><li><a href="#oferta">Oferta</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#blog">Blog BHP</a></li><li><a href="polityka.html">Polityka prywatności</a></li></ul></div>
+      <div><h4>Strona</h4><ul><li><a href="#oferta">Oferta</a></li><li><a href="#szkolenia">Szkolenia BHP</a></li><li><a href="#obszar">Gdzie działam</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#blog">Blog BHP</a></li><li><a href="polityka.html">Polityka prywatności</a></li></ul></div>
       <div><h4>Kontakt</h4><ul><li><a href="tel:+48790499686">790 499 686</a></li><li><a href="mailto:karolina.adamowicz@bhp-gocha.com.pl">Napisz e-mail</a></li><li>ul. Wyspiańskiego 1<br>55-220 Miłoszyce</li></ul></div>
       <div><h4>Social media</h4><ul><li><a href="https://www.facebook.com/SafetySolutionsAdamowicz" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/safety_solutionss/" rel="noopener">Instagram</a></li></ul></div>
     </div>
