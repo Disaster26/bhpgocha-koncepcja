@@ -25,7 +25,7 @@
 </div>
 <script>(function(){function ssk(){(function(){
   var top=document.getElementById('top'),burger=document.getElementById('burger'),nav=document.getElementById('nav');
-  function sy(){return window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0}function tlo(){if(top)top.classList.toggle('na-bialym',sy()>40)}
+  function sy(){return window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0}function tlo(){if(top)top.classList.toggle('na-bialym',stale||sy()>40)}var stale=!document.querySelector('.ssk .hero,.ssk .pg');
   tlo();window.addEventListener('scroll',tlo,{passive:true});
   if(burger)burger.addEventListener('click',function(){var o=top.classList.toggle('menu-otwarte');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu')});
   if(nav)nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('menu-otwarte');burger.setAttribute('aria-expanded','false')})});
