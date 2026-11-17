@@ -23,7 +23,11 @@
 :root{--wrap:1200px}
 @media (min-width:1700px){:root{--wrap:1440px}}
 .ssk{font:400 18px/1.6 var(--body);color:var(--text);text-align:left;-webkit-font-smoothing:antialiased}
-.ssk-full{position:relative;width:calc(100vw - var(--vertical-scrollbar-width,0px));margin-left:calc(50% - (100vw - var(--vertical-scrollbar-width,0px))/2);display:flow-root}
+:root{--ssk-cw:1200px}
+@media (max-width:1199px){:root{--ssk-cw:768px}}
+@media (max-width:767px){:root{--ssk-cw:480px}}
+@media (max-width:479px){:root{--ssk-cw:320px}}
+.ssk-full{position:relative;width:calc(100vw - var(--vertical-scrollbar-width,0px));margin-left:calc((var(--ssk-cw) - (100vw - var(--vertical-scrollbar-width,0px)))/2);display:flow-root}
 .ssk ul,.ssk ol{list-style:none}
 .ssk h1,.ssk h2,.ssk h3,.ssk h4{font-weight:700}
 .ssk h3{font-weight:600}
